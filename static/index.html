@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator-display" ><p id="calculator-display">123</p></div>
+        <div class="calculator-row">
+            <button class="calculator-button calculator-button-1" onclick="allClear()">AC</button>
+            <button class="calculator-button calculator-button-1" onclick="onceClear()">C</button>
+            <button class="calculator-button calculator-button-1" onclick="enterPercent()">%</button>
+            <button class="calculator-button calculator-button-2" onclick="enterOperation('/')">/</button>
+        </div>
+        <div class="calculator-row">
+            <button class="calculator-button calculator-button-3" onclick="enterNumber(7)">7</button>
+            <button class="calculator-button calculator-button-3" onclick="enterNumber(8)">8</button>
+            <button class="calculator-button calculator-button-3" onclick="enterNumber(9)">9</button>
+            <button class="calculator-button calculator-button-2" onclick="enterOperation('*')">*</button>
+        </div>
+        <div class="calculator-row">
+            <button class="calculator-button calculator-button-3" onclick="enterNumber(4)">4</button>
+            <button class="calculator-button calculator-button-3" onclick="enterNumber(5)">5</button>
+            <button class="calculator-button calculator-button-3" onclick="enterNumber(6)">6</button>
+            <button class="calculator-button calculator-button-2" onclick="enterOperation('-')">-</button>
+        </div>
+        <div class="calculator-row">
+            <button class="calculator-button calculator-button-3" onclick="enterNumber(1)">1</button>
+            <button class="calculator-button calculator-button-3" onclick="enterNumber(2)">2</button>
+            <button class="calculator-button calculator-button-3" onclick="enterNumber(3)">3</button>
+            <button class="calculator-button calculator-button-2" onclick="enterOperation('+')">+</button>
+        </div>
+        <div class="calculator-row">
+            <button class="calculator-button calculator-button-3" onclick="enterDecimal()">.</button>
+            <button class="calculator-button calculator-button-3" onclick="enterNumber(0)">0</button>
+            <button class="calculator-button calculator-button-3" id="calculator-equals" onclick="enterEquals()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
